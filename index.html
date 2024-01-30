@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evoque Remote Control</title>
+</head>
+<body>
+    <h1>Evoque Remote Control</h1>
+    
+    <form action="/send_message" method="post">
+        <input type="hidden" name="frame" value="1">
+        <button type="submit">Lock Door</button>
+    </form>
+
+    <form action="/send_message" method="post">
+        <input type="hidden" name="frame" value="2">
+        <button type="submit">Unlock Door</button>
+    </form>
+
+    <form action="/send_message" method="post">
+        <input type="hidden" name="frame" value="3">
+        <button type="submit">Open all window</button>
+    </form>
+
+    <form action="/send_message" method="post">
+        <input type="hidden" name="frame" value="4">
+        <button type="submit">Close all window</button>
+    </form>
+
+    <form action="/send_message" method="post">
+        <input type="hidden" name="frame" value="5">
+        <button type="submit">Hazard Light</button>
+    </form>
+
+    <form action="/send_message" method="post">
+        <input type="hidden" name="frame" value="6">
+        <button type="submit">Open Trunk</button>
+    </form>
+</body>
+</html>
